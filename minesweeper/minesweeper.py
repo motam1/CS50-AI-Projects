@@ -214,10 +214,11 @@ class MinesweeperAI():
             self.knowledge.append(new_sentence)
 
         for sentence in self.knowledge:    # Infering new sentences and adding to knowledge
-            add_sentence = Sentence(sentence.cells.difference(new_sentence.cells), abs(sentence.count - new_sentence.count))
-            if add_sentence not in self.knowledge:
-                self.knowledge.append(add_sentence)
-    
+            if new_sentence.cells.issubset(sentence.cells):    
+                add_sentence = Sentence(sentence.cells.difference(new_sentence.cells), abs(sentence.count - new_sentence.count))
+                if add_sentence not in self.knowledge:
+                    self.knowledge.append(add_sentence)
+        
         for sentence in self.knowledge:   # Marking safes and mines
             if sentence.known_mines():
                 for mine in sentence.known_mines().copy():
