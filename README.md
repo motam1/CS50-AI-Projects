@@ -11,6 +11,6 @@ Topic 4: Optimization (crossword)
 
 Topic 5: Learning (shopping, nim)
 
-Topic 6: Neural Networks (shopping)
+Topic 6: Neural Networks (traffic)
 
 Topic 7: Language (parser, attention)
