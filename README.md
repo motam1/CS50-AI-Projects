@@ -46,7 +46,18 @@ This chapter provided an interesting introduction to **machine learning**, with 
 - **[Shopping](shopping):** This project involved implementing a **k-nearest neighbors** (k-NN) model using scikit-learn to predict user purchasing behavior in an online shopping environment. The model was trained on a dataset containing information about online shopping users, including whether or not they made a purchase. Using this data, the model is now able to predict how likely future users are to make a purchase based on their provided information.
 - **[Nim](nim):** This project involved creating a reinforcement learning model capable of playing the game Nim. Using a Q-Learning approach and many training games, the AI was able to master the game.
 
+# CS50 AI - Neural Networks and Natural Language Processing
 
-Topic 6: Neural Networks (traffic)
+## Topic 6: Neural Networks
+This topic is all about neural networks, which are composed of layers of **nodes** (neurons), with each layer transforming the input data through mathematical functions. Key concepts covered include perceptrons as the basic unit of a neural network functioning as linear classifiers, activation functions like ReLU and Sigmoid that allow the network to learn complex relationships, backpropagation for training the networks by propagating errors back to update weights, and training with gradient descent to minimize loss functions. The lecture also introduced deeper networks, or **deep learning**, and demonstrated how neural networks can be applied to tasks such as image recognition using frameworks like **TensorFlow**. 
 
-Topic 7: Language (parser, attention)
+### Project: 
+- **[Traffic](traffic):** The purpose of this project was to create a **convolutional neural network** to classify images of road signs using TensorFlow. This project required experimentation with various neural network parameters such as the number of **convolutional** and **pooling layers**, the number and sizes of filters for **convolutional layers**, pool sizes for **pooling layers**, the number and sizes of **hidden layers**, and **dropout**. The model was trained on labeled training data and achieved an accuracy of 93% on the testing dataset.
+
+## Topic 7: Natural Language Processing
+This topic explores Natural Language Processing (NLP), focusing on how AI understands and processes human language. Key methods include tokenization, text representation using Bag of Words, and text classification through models like Naive Bayes. The topic also introduces Markov Models for text generation and the use of libraries like **NLTK** to implement these techniques in AI projects, such as sentiment analysis and text classification.
+
+### Projects
+- **[Parser](parser)**: Use NLTK to create an AI to parse sentences and extract noun phrases.
+- **[Attention](attention)**: Create a masked language model to predict an unknown word in a sentence based on its surrounding words.
+
